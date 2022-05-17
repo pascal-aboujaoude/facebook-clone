@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
 .background-color {
   background: #f0f2f5;
 }
@@ -14,6 +20,13 @@
   padding: 10px;
 }
 
+.image-fb {
+  display: flex;
+  width: 10px;
+  height: 100px;
+  padding: 50px 50px 50px 50px;
+}
+
 .column-login {
   flex: 50%;
   float: left;
@@ -21,6 +34,36 @@
   padding: 10px;
 }
 
-.input-background {
+.background-input {
+  color: rgb(146, 47, 47);
+}
+
+.button-login {
+  background-color: #166fe5;
   color: white;
+  border-radius: 6px;
+  font-size: 20px;
+  line-height: 48px;
+  width: 332px;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.break-smallline {
+  width: 95%;
+}
+
+.button-create {
+  background-color: #36a420;
+  color: white;
+  border-radius: 5px;
+  font-size: 17px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  width: fit-content;
+  margin: 20px auto 10px auto;
+  font-weight: bold;
 }
