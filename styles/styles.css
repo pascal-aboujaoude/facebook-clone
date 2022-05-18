@@ -17,27 +17,36 @@ body {
 .row {
   display: flex;
   clear: both;
+  height: 100vh;
+  margin-bottom: 20px;
 }
 
 .column-facebook {
-  flex: 50%;
   float: left;
   height: 50%;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .image-fb {
   display: flex;
   width: 200px;
-  height: 100px;
-  padding: 50px 50px 50px 50px;
-  margin: 20px;
+  height: 70px;
+  padding: 320px 50px 0px 50px;
+  margin-top: 200px;
+  margin-left: 100px;
 }
 
 .facebook-def {
-  padding: 10px 50px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
+  margin-left: 150px;
+  padding-bottom: 250px;
   font-weight: normal;
+  padding-top: 20px;
+  display: flex;
 }
 
 .column-login {
@@ -48,13 +57,17 @@ body {
   justify-content: center;
 }
 
+.button-email {
+  text-align: center;
+}
+
 .button-email > input[type="text"] {
   height: 35%;
   margin: 8px 0;
   border-radius: 5px;
-  padding-left: 10px;
+  padding: 20px 20px 20px 20px;
   font-size: 16px;
-  width: 95%;
+  width: 85%;
   border: 1.5px solid #eeeff0;
 }
 
@@ -85,14 +98,17 @@ body {
   cursor: pointer;
   font-weight: bold;
   text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .button-login:hover {
   background-color: #166fe5;
 }
 
-.background-input > a {
-  margin: 50px 0;
+.forgot-pass > a {
+  margin: 80px;
   text-decoration: none;
   font-size: 15px;
   color: #1877f2;
@@ -101,15 +117,18 @@ body {
   text-align: center;
 }
 
-.background-input > a:hover {
+.forgot-pass > a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 .break-smallline {
   width: 95%;
-  height: 0.1%;
+  height: 1px;
   background-color: rgb(194, 193, 193);
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .button-create {
@@ -120,8 +139,8 @@ body {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;
-  width: 60%;
+  padding: 15px 1px;
+  width: 50%;
   margin: 20px auto 10px auto;
   font-weight: bold;
   text-align: center;
@@ -130,9 +149,15 @@ body {
 .create {
   font-size: 15px;
   position: absolute;
+  padding-top: 30px;
+  padding-left: 50px;
 }
 
-.cerate > strong:hover {
+.page {
+  font-weight: bold;
+}
+
+.page:hover {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -152,6 +177,21 @@ body {
   word-spacing: 12px;
   line-height: 20px;
   flex-wrap: wrap;
+  display: flex;
+  align-content: flex-start;
+}
+
+.break-line {
+  margin-left: 0;
+  background-color: rgb(194, 193, 193);
+  width: 80%;
+  height: 15px;
+  height: 1px;
+}
+
+.languages {
+  padding-right: 200px;
+  padding-bottom: 10px;
 }
 
 .languages > a {
@@ -164,4 +204,63 @@ body {
 .languages > a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.text {
+  color: #6d6d6d;
+  padding-top: 10px;
+}
+
+.text > a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #6d6d6d;
+  font-weight: 500;
+}
+
+.text > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1114px) {
+  .row {
+    left: 70px;
+    margin-right: 22vw;
+  }
+  .column-facebook {
+    left: 70px;
+    margin-right: 22vw;
+  }
+  .column-login {
+    right: 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  body {
+    height: 150vh;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .column-facebook {
+    margin-right: 0;
+    align-items: center;
+    left: 0;
+    top: 20px;
+  }
+  .column-login {
+    text-align: center;
+    left: center;
+    top: 80px;
+    margin: auto;
+  }
+  .footer {
+    position: absolute;
+    padding: 20px;
+    width: 100vw;
+    align-items: center;
+  }
 }
